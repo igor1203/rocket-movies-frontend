@@ -10,6 +10,8 @@ export default createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_300};
     color:  ${({ theme }) => theme.COLORS.PINK};;
+  
+    -webkit-font-smoothing: antialiased;
   }
 
   a {
@@ -23,5 +25,11 @@ export default createGlobalStyle`
 
   button:hover, a:hover {
     filter: brightness(0.9);
+  }
+
+  body, input, button, textarea {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    outline: none;
   }
 `;

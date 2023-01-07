@@ -8,8 +8,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_300};
-    color:  ${({ theme }) => theme.COLORS.PINK};;
+    background-color: ${({ theme }) => theme.COLORS.BLACK_200};
+    color: ${({ theme }) => theme.COLORS.PINK};
   
     -webkit-font-smoothing: antialiased;
   }

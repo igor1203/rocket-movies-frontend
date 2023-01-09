@@ -31,7 +31,6 @@ export const Profile = styled.div`
     flex-direction: column;
     margin-left: 16px;
     line-height: 18px;
-  }
 
   span {
     font-size: 14px;
@@ -44,4 +43,5 @@ export const Profile = styled.div`
     color: ${({  theme }) => theme.COLORS.GRAY_200};
     font-weight: 400;
   }
-`
+}
+`;

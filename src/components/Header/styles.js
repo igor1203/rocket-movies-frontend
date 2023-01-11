@@ -13,7 +13,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
 
-  padding: 0 83px;
+  padding: 0 123px;
 `;
 
 export const Profile = styled.div`
@@ -29,7 +29,8 @@ export const Profile = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    margin-left: 16px;
+    align-items: flex-end;
+    margin-right: 9px;
     line-height: 18px;
 
   span {
@@ -44,4 +45,21 @@ export const Profile = styled.div`
     font-weight: 400;
   }
 }
+`;
+
+export const Brand = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > h1 {
+    font-size: 24px;
+  }
+`;
+
+export const Search = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 0 64px;
+  flex-grow: 1;
 `;

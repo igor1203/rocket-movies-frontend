@@ -11,13 +11,6 @@ export const Container = styled.div`
   "content";
 `;
 
-export const Back = styled.button`
-  border: none;
-  background: none;
 
-  > svg {
-    color: ${({ theme }) => theme.COLORS.PINK};
-    width: 16px;
-    height: 16px;
-  }
-`;
+
+

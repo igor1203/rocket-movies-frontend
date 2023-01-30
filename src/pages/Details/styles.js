@@ -9,6 +9,15 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
+  > main {
+    grid-area: content;
+  
+    width: 100%;
+    margin: 40px auto;
+
+    
+  }
 `;
 
 

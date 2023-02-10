@@ -14,6 +14,7 @@ export const Container = styled.header`
   justify-content: space-between;
 
   padding: 0 123px;
+
 `;
 
 export const Profile = styled.div`
@@ -31,7 +32,6 @@ export const Profile = styled.div`
     flex-direction: column;
     align-items: flex-end;
     margin-right: 9px;
-    line-height: 18px;
 
   span {
     font-size: 14px;

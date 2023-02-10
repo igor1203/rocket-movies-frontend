@@ -3,6 +3,7 @@ import { Container} from './styles'
 import { RiArrowLeftLine } from 'react-icons/ri'
 import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
+import { Rating } from '../../components/Rating'
 import { Input } from '../../components/Input'
 
 export function Details() {
@@ -15,12 +16,18 @@ export function Details() {
       </Header>
 
       <main>
-        <section>
+        <header>
           <ButtonText>
             <RiArrowLeftLine />
               Voltar
           </ButtonText>
-        </section>
+
+          <div>
+            <h1>Interestellar</h1>
+            <Rating grade="4" isBigSize />
+          </div>
+        </header>
+
       </main>
     </Container>
   )

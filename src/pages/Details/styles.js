@@ -12,12 +12,13 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
-  
-    width: 100%;
-    margin: 40px auto;
+    overflow-y: auto;
 
-    
+    padding: 0 123px;
+    margin-top: 40px;
+      
   }
+  
 `;
 
 

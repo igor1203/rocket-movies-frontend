@@ -59,7 +59,7 @@ export function Details() {
         enviadas anos antes identificaram três planetas potencialmente habitáveis orbitando o buraco negro Gargântua: Miller,
         Edmunds e Mann – nomeados em homenagem aos astronautas que os pesquisaram. Brand recruta Cooper para pilotar a nave espacial Endurance e recuperar os dados dos astronautas;
         se um dos planetas se mostrar habitável, a humanidade irá seguir para ele na instalação da NASA,
-        que é na realidade uma enorme estação espacial. A partida de Cooper devasta Murphy.
+        que é na realidade uma enorme estação espacial. A partida de Cooper devasta Murphy. <br></br> <br></br>
         Além de Cooper, a tripulação da Endurance é formada pela bióloga Amelia, filha de Brand; o cientista Romilly, o físico planetário Doyle, além dos robôs TARS e CASE.
         Eles entram no buraco de minhoca e se dirigem a Miller,
         porém descobrem que o planeta possui enorme dilatação gravitacional temporal por estar tão perto de Gargântua: cada hora na superfície equivale a sete anos na Terra.
@@ -69,5 +69,5 @@ export function Details() {
 
       </main>
     </Container>
-  )
+  );
 }

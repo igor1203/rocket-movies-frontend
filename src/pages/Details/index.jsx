@@ -4,18 +4,13 @@ import { FiArrowLeft, FiClock } from 'react-icons/fi'
 import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
 import { Rating } from '../../components/Rating'
-import { Input } from '../../components/Input'
 import { Tag } from '../../components/Tag'
 
 export function Details() {
   return (
     <Container>
-      <Header>
-        <Input 
-          placeholder="Pesquisar pelo título" 
-        />
-      </Header>
-
+      <Header />
+       
       <main>
         <header>
           <ButtonText>

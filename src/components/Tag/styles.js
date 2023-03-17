@@ -10,6 +10,6 @@ export const Container = styled.span`
   
 
   color: ${({ theme }) => theme.COLORS.WHITE_200};
-  background-color: ${({ theme }) => theme.COLORS.BLACK_300};
+  background-color: ${({ theme }) => theme.COLORS.BLACK_100};
 
 `;

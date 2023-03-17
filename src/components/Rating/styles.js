@@ -6,5 +6,6 @@ export const Container = styled.div`
 
   svg {
     font-size: ${({ isBigSize }) => (isBigSize ? "20px" : "12px")};
+    color: ${({ theme }) => theme.COLORS.PINK};
   }
 `;

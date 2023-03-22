@@ -8,14 +8,24 @@ export const Container = styled.header`
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: ${({ theme}) => theme.COLORS.BACKGROUND_100};
-
+  border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+  
   display: flex;
   justify-content: space-between;
 
   padding: 0 123px;
+  
+  `;
 
-`;
+  export const Brand = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    > h1 {
+      font-size: 24px;
+    }
+  `;
 
 export const Profile = styled.div`
   display: flex;
@@ -47,15 +57,6 @@ export const Profile = styled.div`
 }
 `;
 
-export const Brand = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  > h1 {
-    font-size: 24px;
-  }
-`;
 
 export const Search = styled.div`
   display: flex;

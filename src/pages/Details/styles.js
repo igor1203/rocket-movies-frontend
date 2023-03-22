@@ -30,6 +30,8 @@ export const Container = styled.div`
         margin-right: 19px;
         font-weight: 500;
         font-size: 36px;
+        color: ${({ theme }) => theme.COLORS.WHITE_200};
+
       }
 
       .movie-info {

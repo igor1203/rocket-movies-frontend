@@ -40,12 +40,12 @@ export function New() {
           />
 
           <section title='Marcadores'>
+            <h2>Marcadores</h2>
             <div className='tags'>
              <MovieItem 
               value="React" />
             <MovieItem 
-              isNew placeholder="Novo marcador"/>
-            
+              isNew placeholder="Novo marcador"/>    
             </div>
           </section>
 

@@ -3,6 +3,7 @@ export default {
     BACKGROUND_100: "#3E3B47",
     BACKGROUND_200: "rgba(255, 133, 155, 0.05)",
     BACKGROUND_300: "#0D0C0F",
+    BACKGROUND_400: "#262529",
   
     WHITE_100: "#FFFFFF",
     WHITE_200: "#F4EDE8",

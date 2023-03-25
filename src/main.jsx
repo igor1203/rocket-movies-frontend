@@ -8,12 +8,13 @@ import theme from './styles/theme'
 import { Details } from './pages/Details'
 import { Home } from './pages/Home'
 import { New } from './pages/New'
+import { Profile } from './pages/Profile'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <New />
+      <Profile />
     </ThemeProvider>
   </React.StrictMode>,
 )

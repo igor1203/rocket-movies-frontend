@@ -16,7 +16,7 @@ export function Header() {
         <Input placeholder="Pesquisar pelo título" />
       </Search>
 
-      <Profile>
+      <Profile to="/profile">
 
         <div>
           <span>Igor Xavier</span>

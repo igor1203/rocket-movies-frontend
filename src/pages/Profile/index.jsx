@@ -1,4 +1,5 @@
 import { Container, Avatar } from './styles'
+import {  Link } from 'react-router-dom'
 import { ButtonText } from '../../components/ButtonText'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -10,10 +11,12 @@ export function Profile() {
     
     <main>
       <header>
-      <ButtonText>
-        <FiArrowLeft />
-            Voltar
-         </ButtonText>
+        <Link to="/">
+          <ButtonText>
+            <FiArrowLeft />
+                Voltar
+            </ButtonText>
+         </Link>
       </header>
 
       <form>

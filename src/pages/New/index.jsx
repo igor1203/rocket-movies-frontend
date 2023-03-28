@@ -5,6 +5,7 @@ import { ButtonText } from "../../components/ButtonText"
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { MovieItem } from '../../components/MovieItem'
+import { Link } from 'react-router-dom'
 
 export function New() {
   return (
@@ -13,11 +14,12 @@ export function New() {
       <main>
         <form>
           <header>
-            <ButtonText>
-              <FiArrowLeft />
-              Voltar
-            </ButtonText>
-
+            <Link to="/">
+              <ButtonText>
+                <FiArrowLeft />
+                  Voltar
+              </ButtonText>
+            </Link>
             <h1>Novo filme</h1>
           </header>
 

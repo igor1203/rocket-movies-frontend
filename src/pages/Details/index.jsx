@@ -5,6 +5,7 @@ import { ButtonText } from '../../components/ButtonText'
 import { Header } from '../../components/Header'
 import { Rating } from '../../components/Rating'
 import { Tag } from '../../components/Tag'
+import { Link } from 'react-router-dom'
 
 export function Details() {
   return (
@@ -13,10 +14,13 @@ export function Details() {
        
       <main>
         <header>
-          <ButtonText>
-            <FiArrowLeft />
-              Voltar
-          </ButtonText>
+          <Link to="/">
+            <ButtonText>
+              <FiArrowLeft />
+                Voltar
+            </ButtonText>
+          </Link>
+          
 
           <div>
             <h1>Interestellar</h1>

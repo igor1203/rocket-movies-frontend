@@ -16,8 +16,8 @@ export function SignIn() {
 
         <Input 
           placeholder="E-mail"
-          type="e-mail"
-          icon={FiMail}  
+          type="text"
+          icon={FiMail}
         />
 
         <Input 

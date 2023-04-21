@@ -1,4 +1,4 @@
-import { Container, Profile, Brand, Search } from './styles';
+import { Container, Profile, Brand, Search, Logout } from './styles';
 
 import { Input } from '../../components/Input';
 
@@ -10,8 +10,6 @@ export function Header() {
         <h1>RocketMovies</h1>
       </Brand>
 
-      
-
       <Search>
         <Input placeholder="Pesquisar pelo título" />
       </Search>
@@ -20,7 +18,6 @@ export function Header() {
 
         <div>
           <span>Igor Xavier</span>
-          <strong>sair</strong>
         </div>
 
         <img 
@@ -28,7 +25,12 @@ export function Header() {
           alt="Imagem do GitHub"
         />
 
+
       </Profile>
+      
+          <Logout>
+            sair
+          </Logout>
        
     </Container>
     

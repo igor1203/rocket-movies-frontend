@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.header`
   grid-area: header;
+  position: relative;
 
   height: 116px;
   width: 100%;
@@ -49,12 +50,6 @@ export const Profile = styled(Link)`
     color: ${({  theme }) => theme.COLORS.WHITE_200};
     font-weight: 700;
   }
-
-  strong {
-    font-size: 14px;
-    color: ${({  theme }) => theme.COLORS.GRAY_200};
-    font-weight: 400;
-  }
 }
 `;
 
@@ -64,4 +59,15 @@ export const Search = styled.div`
   align-items: center;
   padding: 0 64px;
   flex-grow: 1;
+`;
+
+export const Logout = styled.button`
+  font-size: 14px;
+  color: ${({  theme }) => theme.COLORS.GRAY_200};
+  font-weight: 400;
+  border: none;
+  background: none;
+  position: absolute;
+  bottom: 30px;
+  right: 196px;
 `;

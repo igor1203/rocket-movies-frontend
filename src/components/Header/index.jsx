@@ -1,8 +1,11 @@
 import { Container, Profile, Brand, Search, Logout } from './styles';
-
+import { useAuth } from "../../hooks/auth" 
 import { Input } from '../../components/Input';
 
 export function Header() {
+
+  const { signOut } = useAuth()
+
   return(
 
     <Container>
@@ -27,10 +30,10 @@ export function Header() {
 
 
       </Profile>
-      
-          <Logout>
-            sair
-          </Logout>
+
+        <Logout onClick={signOut}>
+          sair
+        </Logout>
        
     </Container>
     

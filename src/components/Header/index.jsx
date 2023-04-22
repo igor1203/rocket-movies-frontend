@@ -1,6 +1,6 @@
 import { Container, Profile, Brand, Search, Logout } from './styles';
-import { useAuth } from "../../hooks/auth" 
-import { api } from '../../services/api';
+import { useAuth } from "../../hooks/auth"
+import { api } from '../../services/api'; 
 import { Input } from '../../components/Input';
 
 export function Header() {

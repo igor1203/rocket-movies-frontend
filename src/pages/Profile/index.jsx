@@ -2,10 +2,10 @@ import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from 'react-icons/fi'
 import avatarPlaceholder from '../../assets/avatar_placeholder.svg'
 import { ButtonText } from '../../components/ButtonText'
 import { Button } from '../../components/Button'
+import { api } from '../../services/api'
 import { Input } from '../../components/Input'
 import { Container, Avatar } from './styles'
 import { useAuth } from '../../hooks/auth'
-import { api } from '../../services/api'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -18,6 +18,7 @@ const { user, updateProfile } = useAuth()
   const [passwordNew, setPasswordNew] = useState()
 
   const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
+
   const [avatar, setAvatar] = useState(avatarUrl)
   const [avatarFile, setAvatarFile] = useState(null)
 
@@ -29,6 +30,8 @@ const { user, updateProfile } = useAuth()
       password: passwordNew,
       old_password: passwordOld,
     }
+
+
     await updateProfile({ user, avatarFile })
   }
 

@@ -13,11 +13,17 @@ export const Container = styled.div`
     isNew ? "transparent" : theme.COLORS.BACKGROUND_100};
   border: ${({ theme, isNew }) =>
     isNew ? `1px dashed ${theme.COLORS.GRAY_200}` : "none"};
+  
+
 
     button {
       border: none;
       background: none;
       color: ${({ theme }) => theme.COLORS.PINK};
+
+      svg {
+        font-size: 24px;
+      }
     }
 
     input {

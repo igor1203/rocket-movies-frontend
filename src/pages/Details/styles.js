@@ -21,11 +21,16 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
 
+      button {
+        background: none;
+        border: none;
+      }
+
       div {
         display: flex;
         align-items: center;
       }
-
+      
       h1 {
         margin-right: 19px;
         font-weight: 500;
@@ -38,21 +43,21 @@ export const Container = styled.div`
         margin-top: 24px;
         gap: 8px;
         color: ${({ theme }) => theme.COLORS.WHITE_200};
-
-          img {
-            border-radius: 50%;
-            width: 16px;
-            height: 16px;
-            margin-right: 8px;
-          }
+        
+        img {
+          border-radius: 50%;
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
         }
+      }
     }
-
+    
     section {
       margin-top: 40px;
       margin-bottom: 40px;
     }
-
+    
     > p {
       font-weight: 400;
       font-size: 16px;
@@ -60,17 +65,22 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.COLORS.WHITE_200};
       text-align: justify;
     }
+    button {
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
+    color: ${({ theme }) => theme.COLORS.PINK};
+    width: calc(50% - 20px);
+    margin-top: 40px;
+    }
+    
   }
+  
+    `;
 
-  > main::-webkit-scrollbar {
-    width: 8px;
-  }
 
-  > main::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.PINK};
-    border-radius: 8px;
-  }
-`;
+
+
+
+
 
 
 

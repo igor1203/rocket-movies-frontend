@@ -2,16 +2,32 @@ import { ButtonText } from '../../components/ButtonText'
 import { FiArrowLeft, FiClock } from 'react-icons/fi'
 import { Header } from '../../components/Header'
 import { Rating } from '../../components/Rating'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { Tag } from '../../components/Tag'
-import { Link } from 'react-router-dom'
 import { api } from '../../services/api'
 import { Container} from './styles'
 import { useState, useEffect } from 'react'
 import { useAuth } from '../../hooks/auth'
+import {Button} from '../../components/Button'
 
 export function Details() {
   const [data, setData] = useState(null)
+
+  const navigate = useNavigate()
+
+  function handleBack(){
+    navigate("/")
+  }
+
+  async function handleRemove(){
+    const confirm = window.confirm("Deseja realmente remover o filme?")
+  
+    if(confirm){
+      await api.delete(`/notes/${params.id}`)
+      handleBack()
+    }
+  }
+  
 
   const params = useParams()
 
@@ -36,12 +52,10 @@ export function Details() {
         data &&
         <main>
           <header>
-            <Link to="/">
-              <ButtonText>
+              <ButtonText onClick={handleBack}>
                 <FiArrowLeft />
                   Voltar
               </ButtonText>
-            </Link>
             
 
             <div>
@@ -82,6 +96,13 @@ export function Details() {
           <p>
             {data.description}
           </p>
+
+          <div>
+            <Button
+              title="Excluir filme"
+              onClick={handleRemove}
+            />
+          </div>
 
         </main>
       }

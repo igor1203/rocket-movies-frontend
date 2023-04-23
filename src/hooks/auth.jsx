@@ -35,7 +35,7 @@ function AuthProvider({ children }) {
     setData({})
   }
 
-  async function updateProfile({ user, avatarFile }){
+  async function updatedProfile({ user, avatarFile }){
   try {
 
     if(avatarFile){
@@ -80,7 +80,7 @@ function AuthProvider({ children }) {
     <AuthContext.Provider value={{
       signIn,
       signOut,
-      updateProfile,
+      updatedProfile,
       user: data.user,
     }}  
     >

@@ -55,8 +55,10 @@ export const Container = styled.div`
     textarea {
       margin-top: 40px;
       margin-bottom: 40px;
-      color: ${({ theme }) => theme.COLORS.GRAY_200};
-      background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+      color: white;
+      font-weight: 400px;
+      font-size: 16px;
+      background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
       width: 100%;
       height: 275px;
       padding: 19px 16px;
@@ -78,4 +80,5 @@ export const Container = styled.div`
     }
    }
 `;
+
 

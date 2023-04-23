@@ -3,7 +3,6 @@ import { Tag } from "../Tag";
 import { Rating } from "../Rating";
 
 export function Movie({ data, ...rest }){
-  console.log(data.tags)
   return(
     <Container {...rest}>
       <div className="wrapper_header">
@@ -19,19 +18,18 @@ export function Movie({ data, ...rest }){
       </div>
 
       {
-        data.tags && 
+        data.tags && (
 
         <footer>
           {
-            data.tags.map(tag => {
-              return (
+             
+                data.tags.map((tag) => (
 
                 <Tag key={tag.id} title={tag.name} />
-              )
-            })
+              ))
           }
         </footer>
-      }
+      )}
     
     </Container>
   );

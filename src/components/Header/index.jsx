@@ -3,6 +3,7 @@ import avatarPlaceholder from '../../assets/avatar_placeholder.svg';
 import { useAuth } from "../../hooks/auth"
 import { api } from '../../services/api'; 
 import { Input } from '../../components/Input';
+import { useState } from 'react';
 
 export function Header() {
 

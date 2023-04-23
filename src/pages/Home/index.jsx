@@ -6,11 +6,17 @@ import { Header } from "../../components/Header";
 import { Movie } from "../../components/Movie";
 import { useState, useEffect } from "react";
 import { api } from "../../services/api";
+import { useNavigate } from "react-router-dom";
 
 export function Home() {
   const [movies, setMovies] = useState([])
   const [search, setSearch] = useState("")
-  
+
+  const navigate = useNavigate()
+
+  function handleDetails(id){
+    navigate(`/details/${id}`)
+  }
   
   useEffect(() => {
     async function fetchMovies(){
@@ -25,7 +31,7 @@ export function Home() {
   return (
     <Container>
       <Header
-        onChange={() => setSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}
       />
       <main>
         <header>
@@ -43,6 +49,7 @@ export function Home() {
               <Movie
                 key={String(movie.id)}
                 data={movie}
+                onClick={() => handleDetails(movie.id)}
               />
             ))
           }

@@ -8,7 +8,7 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 import { FiMail, FiLock, FiUser, FiArrowLeft } from 'react-icons/fi'
 
-export function SignUp() {
+export function Sign_Up() {
   const [ name, setName ] = useState("")
   const [ email, setEmail ] = useState("")
   const [ password, setPassword ] = useState("")
